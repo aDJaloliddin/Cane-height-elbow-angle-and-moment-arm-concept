@@ -85,7 +85,7 @@ $(document).ready(function () {
   const $top_cane = $(".image__top-cane");
   const $bottom_cane = $(".image__bottom-resizable-cane");
 
-  function move_cane(inch = 1, direction = TOP) {
+  function move_cane(inch = 0.5, direction = TOP) {
     if (direction) {
       distance -= inch * ONE_INCH;
     } else {
@@ -128,8 +128,8 @@ $(document).ready(function () {
       }
 
       $(".js-cane-height").text($(this).val());
-      $(".js-elbow-angle").text((get_alfa() + get_beta()).toFixed(2));
-      $('.js-perpendicular').text(((DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length())/ONE_INCH).toFixed(2));
+      $(".js-elbow-angle").text(Math.round(get_alfa() + get_beta()));
+      $('.js-perpendicular').text(((DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length())/ONE_INCH).toFixed(1));
 
       $(".perpendicular-line").css(
         "width",

@@ -36,12 +36,30 @@
 
 .vertical-line {
     position: absolute;
-    left: 21%;
-    top:20%;
     display: inline-block;
     width: 3px;
-    height: 400px;
     background-color: rgb(21, 255, 0);
+}
+
+.vertical-line-top {
+    left: 21%;
+    top:20%;
+    height: 400px;
+}
+
+.vertical-line-bottom {
+    left: 22%;
+    top: 103%;
+    height: 30px;
+}
+
+.grf {
+    position: absolute;
+    left: 6%;
+    top: 106%;
+    color:rgb(21, 255, 0);
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .perpendicular-line {
@@ -57,4 +75,25 @@
 
 .cane-height-slider {
     transform: rotate(-90deg);
+}
+
+.arrow {
+    padding: 0;
+    width: 0;
+    height: 0;
+    border: 10px solid rgb(21, 255, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.arrow-top {
+    left: 16%;
+    top: 19%;
+}
+
+.arrow-bottom {
+    left: 17%;
+    top: 102%;
 }
