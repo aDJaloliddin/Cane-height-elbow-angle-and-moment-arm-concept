@@ -7,18 +7,18 @@ $(document).ready(function () {
 
   const RIGHT = 1;
   const LEFT = 0;
-  const ONE_INCH = 12; //  1 inch = 12px for this project in displaying values
-  const UPPER_ARM_LENGTH = 100; // in pixels 96px
-  const LOWER_ARM_LENGTH = 140; // in pixels 144px
+  const ONE_INCH = 8; //  1 inch = 12px for this project in displaying values
+  const UPPER_ARM_LENGTH = 73; // in pixels 96px
+  const LOWER_ARM_LENGTH = 102; // in pixels 144px
 
-  const DEFAULT_PERPENDICULAR_LENGTH = 36; // 2 inch = 24 px
+  const DEFAULT_PERPENDICULAR_LENGTH = 24; // 2 inch = 24 px
 
   let alfa = null; // angel for upper arm
   let beta = null; //angel for lower arm
   let perpendicular = null;
   let prev_inch = null;
 
-  let distance = 240; // in pixels
+  let distance = 175; // in pixels
 
   function get_alfa() {
     return (
@@ -127,8 +127,9 @@ $(document).ready(function () {
         prev_inch = inch;
       }
 
-      $(".js-elbow-angle").text(18 * inch);
-      $('.js-perpendicular').text(Math.ceil((DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length())/ONE_INCH));
+      $(".js-cane-height").text($(this).val());
+      $(".js-elbow-angle").text((get_alfa() + get_beta()).toFixed(2));
+      $('.js-perpendicular').text(((DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length())/ONE_INCH).toFixed(2));
 
       $(".perpendicular-line").css(
         "width",

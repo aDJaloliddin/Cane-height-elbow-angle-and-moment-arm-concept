@@ -10,40 +10,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div>
-                    <p>Adjust cane height with slider</p>
-                    <input class="cane-height" type="number" value="29">
-                    <span>inches</span>
-                    <input class="cane-height-slider" type="range" min="29" max="37" value="29">
-                </div>
-                <div class="div">
-                    <p class="text-white">
-                        Elbow angle : 
-                        <span class="elbow-angle">0</span>
-                    </p>
+        <div class="row my-5">
+            <div class="col-12 col-md-4 col-lg-5 mb-3">
+                <div class="d-flex align-items-center h-100 justify-content-center">
+                    <div class="text-center">
+                        <h6 class="fs-5">Adjust cane height with slider</h6>
+                        <p class="fs-5"><span class="btn btn-outline-dark fs-5 px-3 js-cane-height me-3">29</span>inches</p>
+                    </div>
+                    <div class="form-group">
+                        <input class="cane-height-slider form-range" type="range" min="29" max="37" value="29">
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="image__wrapper">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="image__wrapper mx-auto">
                     <span class="vertical-line"></span>
                     <span class="perpendicular-line"></span>
-                    <img class="image__body" src="./assets/images/Body.png" alt="body">
-                    <img class="image__upper-arm" src="./assets/images/upper-arm.png" alt="upper arm">
-                    <img class="image__lower-arm" src="./assets/images/Lower-Arm.png" alt="lower arm">
-                    <img class="image__top-cane" src="./assets/images/Cane-top.png" alt="cane top">
-                    <img class="image__bottom-resizable-cane" src="./assets/images/Cane-resizeable-bottom.png" alt="cane resizeable bottom">
+                    <img class="image__body" src="./assets/images/Body-resized.png" alt="body">
+                    <img class="image__upper-arm" src="./assets/images/upper-arm-resized.png" alt="upper arm">
+                    <img class="image__lower-arm" src="./assets/images/Lower-Arm-resized.png" alt="lower arm">
+                    <img class="image__top-cane" src="./assets/images/Cane-top-resized.png" alt="cane top">
+                    <img class="image__bottom-resizable-cane" src="./assets/images/Cane-resizeable-bottom-resized.png" alt="cane resizeable bottom">
                 </div>
             </div>
-            <div class="col-4 d-flex align-items-start flex-column justify-content-center">
-                <div class="text-center my-5">
-                    <h3 class="fs-2">Elbow Angle</h3>
-                    <span class="btn btn-outline-dark fs-3 px-4"><span class="js-elbow-angle">0</span>&deg;</span>
+            <div class="col-12 col-md-4 d-flex align-items-center align-items-md-start flex-column justify-content-center">
+                <div class="text-center my-2 my-lg-3">
+                    <h2 class="fs-5">Elbow Angle</h2>
+                    <span class="btn btn-outline-dark fs-5 px-3"><span class="js-elbow-angle">0</span>&deg;</span>
                 </div>
-                <div class="text-center my-5">
-                    <h3 class="fs-2 text-danger">External Moment Arm</h3>
-                    <p class="fs-3"><span class="btn btn-outline-dark fs-3 px-4 js-perpendicular me-3">2.0</span>inches</p>
+                <div class="text-center my-2 my-lg-3">
+                    <h2 class="fs-5 text-danger">External Moment Arm</h2>
+                    <p class="fs-5"><span class="btn btn-outline-dark fs-5 px-3 js-perpendicular me-3">2.0</span>inches</p>
                 </div>
             </div>
         </div>
