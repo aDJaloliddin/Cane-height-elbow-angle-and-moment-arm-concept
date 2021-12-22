@@ -1,37 +1,56 @@
 .image__wrapper {
     position: relative;
-}
-
-.container {
-    width: 720px;
-    height: ;
+    width: 250px;
 }
 
 .image__upper-arm {
     position: absolute;
-    left: 17%;
+    left: 24%;
     top: 20%;
     transform-origin: 57% 11%;
 }
 
 .image__lower-arm {
     position: absolute;
-    left: 14%;
+    left: 21%;
     top: 32%;
+    transform-origin: 44% 73%;
     z-index: 2;
 }
 
-.image__cane-top {
+.image__top-cane {
+    width: 77px;
     position: absolute;
-    left: 10%;
-    top: 55%;
+    left: 14%;
+    top: 54%;
     z-index: 1;
 }
 
-.image__cane-resizable-bottom {
+.image__bottom-resizable-cane {
     position: absolute;
-    left: 10%;
-    top: 80%;
+    left: 14%;
+    top: 79%;
     width: 77px;
-    height: 167px;
+    height: 172px;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 21%;
+    top:20%;
+    display: inline-block;
+    width: 4px;
+    height: 400px;
+    background-color: rgb(21, 255, 0);
+}
+
+.perpendicular-line {
+    position: absolute;
+    left: 23%;
+    top: 34%;
+    display: inline-block;
+    width: 36px;
+    height: 4px;
+    z-index: 3;
+    background-color: red;
 }

@@ -11,22 +11,45 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-6 bg-primary">
-                <p>Adjust cane height with slider</p>
-                <input style="width: 2rem;" type="text" value="29">
-                <span>inches</span>
-                <input type="range" min="0" max="50" value="10">
+            <div class="col-4">
+                <div>
+                    <p>Adjust cane height with slider</p>
+                    <input class="cane-height" type="number" value="29">
+                    <span>inches</span>
+                    <input class="cane-height-slider" type="range" min="29" max="37" value="29">
+                </div>
+                <div class="div">
+                    <p class="text-white">
+                        Elbow angle : 
+                        <span class="elbow-angle">0</span>
+                    </p>
+                </div>
             </div>
-            <div class="col-6 bg-success">
+            <div class="col-4">
                 <div class="image__wrapper">
+                    <span class="vertical-line"></span>
+                    <span class="perpendicular-line"></span>
                     <img class="image__body" src="./assets/images/Body.png" alt="body">
                     <img class="image__upper-arm" src="./assets/images/upper-arm.png" alt="upper arm">
                     <img class="image__lower-arm" src="./assets/images/Lower-Arm.png" alt="lower arm">
-                    <img class="image__cane-top" src="./assets/images/Cane-top.png" alt="cane top">
-                    <img class="image__cane-resizable-bottom" src="./assets/images/Cane-resizeable-bottom.png" alt="cane resizeable bottom">
+                    <img class="image__top-cane" src="./assets/images/Cane-top.png" alt="cane top">
+                    <img class="image__bottom-resizable-cane" src="./assets/images/Cane-resizeable-bottom.png" alt="cane resizeable bottom">
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-start flex-column justify-content-center">
+                <div class="text-center my-5">
+                    <h3 class="fs-2">Elbow Angle</h3>
+                    <span class="btn btn-outline-dark fs-3 px-4"><span class="js-elbow-angle">0</span>&deg;</span>
+                </div>
+                <div class="text-center my-5">
+                    <h3 class="fs-2 text-danger">External Moment Arm</h3>
+                    <p class="fs-3"><span class="btn btn-outline-dark fs-3 px-4 js-perpendicular me-3">2.0</span>inches</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
