@@ -1,0 +1,37 @@
+.image__wrapper {
+    position: relative;
+}
+
+.container {
+    width: 720px;
+    height: ;
+}
+
+.image__upper-arm {
+    position: absolute;
+    left: 17%;
+    top: 20%;
+    transform-origin: 57% 11%;
+}
+
+.image__lower-arm {
+    position: absolute;
+    left: 14%;
+    top: 32%;
+    z-index: 2;
+}
+
+.image__cane-top {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    z-index: 1;
+}
+
+.image__cane-resizable-bottom {
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    width: 77px;
+    height: 167px;
+}
