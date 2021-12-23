@@ -59,7 +59,7 @@
     top: 106%;
     color:rgb(21, 255, 0);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .perpendicular-line {
@@ -98,4 +98,8 @@
 .arrow-bottom {
     left: 17%;
     top: 102%;
+}
+
+.hide {
+    opacity: 0;
 }

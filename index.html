@@ -24,28 +24,37 @@
             </div>
             <div class="col-12 col-md-4 col-lg-3 mb-5">
                 <div class="image__wrapper mx-auto mb-5">
-                    <div class="arrow arrow-top"></div>
-                    <span class="vertical-line vertical-line-top"></span>
-                    <span class="perpendicular-line"></span>
+                    <div class="js-toggle-item hide">
+                        <div class="arrow arrow-top"></div>
+                        <span class="vertical-line vertical-line-top"></span>
+                        <span class="perpendicular-line"></span>
+                    </div>
                     <img class="image__body" src="./assets/images/Body-resized.png" alt="body">
                     <img class="image__upper-arm" src="./assets/images/upper-arm-resized.png" alt="upper arm">
                     <img class="image__lower-arm" src="./assets/images/Lower-Arm-resized.png" alt="lower arm">
                     <img class="image__top-cane" src="./assets/images/Cane-top-resized.png" alt="cane top">
                     <img class="image__bottom-resizable-cane" src="./assets/images/Cane-resizeable-bottom-resized.png" alt="cane resizeable bottom">
-                    <div class="arrow arrow-bottom"></div>
-                    <span class="vertical-line vertical-line-bottom"></span>
-                    <span class="grf">GRF</span>
+                    <div class="js-toggle-item hide">
+                        <div class="arrow arrow-bottom"></div>
+                        <span class="vertical-line vertical-line-bottom"></span>
+                        <span class="grf">GRF</span>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center align-items-md-start flex-column justify-content-center">
-                <div class="text-center my-2 my-lg-3">
-                    <h2 class="fs-5">Elbow Angle</h2>
-                    <span class="btn btn-outline-dark fs-5 px-3"><span class="js-elbow-angle">0</span>&deg;</span>
+            <div class="col-12 col-md-4 d-flex align-items-center align-items-md-start flex-column justify-content-around">
+                <div>
+                    <div class="text-center my-3 my-lg-5">
+                        <h2 class="fs-5">Elbow Angle</h2>
+                        <span class="btn btn-outline-dark fs-5 px-3"><span class="js-elbow-angle">0</span>&deg;</span>
+                    </div>
+                    <div class="text-center my-4 my-lg-5 js-toggle-item hide">
+                        <h2 class="fs-5 text-danger">External Moment Arm</h2>
+                        <p class="fs-5"><span class="btn btn-outline-dark fs-5 px-3 js-perpendicular me-3">2.0</span>inches</p>
+                    </div>
                 </div>
-                <div class="text-center my-2 my-lg-3">
-                    <h2 class="fs-5 text-danger">External Moment Arm</h2>
-                    <p class="fs-5"><span class="btn btn-outline-dark fs-5 px-3 js-perpendicular me-3">2.0</span>inches</p>
-                </div>
+                <button class="btn btn-outline-dark fs-4 rounded-3 js-toggle-button mt-4 px-3" data-value="show">
+                    Show Kinetics
+                </button>
             </div>
         </div>
     </div>

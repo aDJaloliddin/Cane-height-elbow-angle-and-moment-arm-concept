@@ -129,12 +129,27 @@ $(document).ready(function () {
 
       $(".js-cane-height").text($(this).val());
       $(".js-elbow-angle").text(Math.round(get_alfa() + get_beta()));
-      $('.js-perpendicular').text(((DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length())/ONE_INCH).toFixed(1));
+      $(".js-perpendicular").text(
+        (
+          (DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length()) /
+          ONE_INCH
+        ).toFixed(1)
+      );
 
       $(".perpendicular-line").css(
         "width",
         DEFAULT_PERPENDICULAR_LENGTH + get_perpendicular_length() + "px"
       );
+    }
+  });
+
+  $(".js-toggle-button").on("click", function () {
+    $(".js-toggle-item").toggleClass("hide");
+
+    if ($(this).data("value") == "show") {
+      $(this).data("value", "hide").text("Hide Kinetics");
+    } else {
+      $(this).data("value", "show").text("Show Kinetics");
     }
   });
 });
